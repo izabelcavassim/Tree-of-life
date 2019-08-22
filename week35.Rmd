@@ -1,0 +1,39 @@
+---
+title: "Tree of life - Week 35"
+date: "8/22/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Week 35 - Tree of life
+
+In this week we will
+
+1.	Install the MEGA7 program
+2. Solve the first MEGA tutorial 2
+3. Create your own influenza data set in Fasta format
+4. Align sequences using MEGA’s implementation of Clustal
+5. Solve MEGA tutorial 3
+6. Estimate genetic distances for nucleotide sequences
+
+## Install MEGA
+MEGA 7.0 is the most popular free phylogenetic program available. Go to www.megasoftware.net and request a download. You can choose versions for Macintosh, Windows and Linux
+
+Now solve MEGA tutorial 2 that can be found here:
+
+## GENBANK
+GenBank is a collection of useful databases that can be accessed through from Align/Show Web Browser  in MEGA. In order to use GenBank efficiently it is a good idea to use specific search fields. These are specified as e.g. [Author], [pdat] (publication time) and [Title] and use logical operators to combine search terms, e.g. AND, OR, NOT. For example, the search “Tataru [Author] AND Markov [Title]”in the Pubmed database should return two papers.
+Solve the following questions:
+
+
+1.	Find and download the paper by Craig Venter from 2001 describing sequencing of the first human genome. How many pages is the paper and where was it published? How can the sequence be obtained
+2.	Find the paper on the high coverage archaic Denisovan sequence published by Svante Paabos group and answer the same questions. Who were the Denisovans?
+3.	How many DNA sequences and protein sequences have been determined in the dolphin (you might want to use the latin name) 
+4.	Find the Taxonomic position of Dolphins and find the number of DNA sequences deposited in GenBank for each of the dolphin species
+5.	Find sequences from FOXP2, which is a protein involved in human speech. How many different species has the nucleotide sequence  been determined for? Try downloading the sequences (in FASTA format). Save them (or add sequences to the MEGA alignment editor). You should download equally sized sequences of the same kind (i.e. either genomic sequences, mRNA sequences or protein sequences, not a mixture). You are free to download either protein or nucleotide sequences. Create a file called foxp2.fas
+6.	Create your own influenza sequence data set from Genbanks flu database http://www.ncbi.nlm.nih.gov/genomes/FLU/Database/nph-select.cgi. Choose protein coding region, Type A, canine and cat, any region, HA protein, any H subtype, any N subtype and full length only. While this analysis can be carried out in MEGA own browser it may be more easy to do it from your own browser and then later import the results to MEGA
+a.	How many sequences do you get ? Choose 10 of these from different species and from different subtypes and download them both as protein coding and protein in Fasta format as flucoding.fas and fluprotein.fas. We will use these for the alignment exercise and for phylogenetic exercises in the coming weeks
+
