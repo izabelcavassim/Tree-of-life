@@ -11,7 +11,7 @@ output: html_document
 
 
 Phylogenetic trees are diagramas that represents the evolutionary distance among organisms. The pattern of branching in a phylogenetic tree reflects how species or other groups evolved from a series of common ancestors. 
-One of the first tasks one should do in order to construct a phylogenetic tree is to align the sequences between the different organisms one would like to compare. After alignment is produced then we can calculate the genetic distances and the build a tree. This week we will stop at calculating the genetic distance, but next week you will learn the possible algorithms one could use to build trees.
+One of the first tasks one should do in order to construct a phylogenetic tree is to align the sequences between the different organisms one would like to compare. After alignment is produced then we can calculate the genetic distances and build a phyogenetic tree representation of the distance matrix. This week we will stop our exercises after calculating the genetic distance, but next week you will learn the possible algorithms used to build phylogenetic tree.
 
 Therefore, in this week we will:
 
