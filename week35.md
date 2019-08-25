@@ -4,13 +4,10 @@ date: "8/22/2019"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 # Week 35 - Tree of life
 
-![Representation of a nucleotide alignment](/Users/PM/Dropbox/Tree_of_life/Tree-of-life/header-image-copy18.jpg) 
+![Representation of a nucleotide alignment](/Users/PM/Dropbox/Tree_of_life/Tree-of-life/header-image-copy18.jpg)
 
 
 Phylogenetic trees are diagramas that represents the evolutionary distance among organisms. The pattern of branching in a phylogenetic tree reflects how species or other groups evolved from a series of common ancestors. 
