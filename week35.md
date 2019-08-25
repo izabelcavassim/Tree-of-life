@@ -74,9 +74,9 @@ https://www.megasoftware.net/web_help_10/index.htm#t=Preface.htm
 
 First open flucoding.meg in MEGA. We now want to estimate pairwise distances between all 10 sequences. Choose this option and you will see that there are a lot of choices you can make. Make sure you understand all of these, e.g
 
-  1.	what is complete versus pairwise deletion?
-  2.	what is the variance estimation method?
-  3.	what does it mean that transitions and transversions can be used?
+  1.	What is complete versus pairwise deletion?
+  2.	What is the variance estimation method?
+  3.	What does it mean that transitions and transversions can be used?
 
 You can now try to make distance matrices using p distances, Jukes Canter, Kimura 2 parameter and Tamura Nei models, more detailed information on these are found in the Book Chapters 2 and 3 of Nei and Kumar. Make sure you know what each of these models are doing, e.g.
 
