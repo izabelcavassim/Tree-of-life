@@ -8,6 +8,8 @@ output: html_document
 # Week 36 - Tree of life
 
 ![Representation of a nucleotide alignment](image_week36.png)
+<img src="image2_week36.png" width="48">
+
 
 
 This week you will have exercises where you should work with testing the best substitution model to use and then you should start building trees using the different classes of tree building methods, the distance based (Neighbourjoining and UPGMA), parsimony and maximum likelihood. You should also bootstrap trees and estimate your confidence in trees using these bootstrap values
@@ -22,7 +24,8 @@ Open primates.meg data set which is the one from Chapter 3 in Nei and Kumar. Wit
 From now on, before you start any analysis you are well advised to determine the best substitution model first
 
 ## The first phylogeny
-![Tree building algorithms](image2_week36.png | height = 70px)
+![Tree building algorithms](image2_week36.png)
+
 
 
 First solve Mega tutorial 4, that can be found [here](https://www.dropbox.com/s/g47okbhljlov2e5/Mega%20tutorial%204.docx?dl=0) then:
