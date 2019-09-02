@@ -11,18 +11,18 @@ output: html_document
 
 
 Phylogenetic trees are diagramas that represents the evolutionary distance among organisms. The pattern of branching in a phylogenetic tree reflects how species or other groups evolved from a series of common ancestors. 
-One of the first tasks one should do in order to construct a phylogenetic tree is to align the sequences between the different organisms one would like to compare. After that one can calculate the genetic distances and the build a tree. This week we will stop at calculating the genetic distance, but next week you will learn the possible algorithms one could use to build trees.
+One of the first tasks one should do in order to construct a phylogenetic tree is to align the sequences between the different organisms one would like to compare. After alignment is produced then we can calculate the genetic distances and build a phyogenetic tree representation of the distance matrix. This week we will stop our exercises after calculating the genetic distance, but next week you will learn the possible algorithms used to build phylogenetic trees.
 
 Therefore, in this week we will:
 
-1. Install the MEGA7 program
-2. Solve the first MEGA tutorial 2
-3. Understand the use of GENBANK
-4. Create your own influenza data set in Fasta format
-5. Understand the use of BLAST 
-6. Align sequences using MEGA’s implementation of Clustal
-7. Solve MEGA tutorial 3 on estimating genetic distances.
-8. Estimate transition transversion bias
+1. **Install** the MEGA7 program
+2. **Solve** the first MEGA tutorial 2
+3. **Understand** the use of GENBANK
+4. **Create** your own influenza data set in Fasta format
+5. **Understand** the use of BLAST 
+6. **Align** sequences using MEGA’s implementation of Clustal
+7. **Solve** MEGA tutorial 3 on estimating genetic distances.
+8. **Estimate** transition transversion bias
 
 ## 1. Install MEGA
 MEGA 7.0 is the most popular free phylogenetic program available. Go to [mega website](www.megasoftware.net) and request a download. You can choose versions for Macintosh, Windows and Linux.
@@ -46,7 +46,7 @@ Solve the following questions:
 ## 4. Creating your own influenza dataset 
 
 6.	Create your own influenza sequence data set from Genbanks flu database http://www.ncbi.nlm.nih.gov/genomes/FLU/Database/nph-select.cgi. Choose protein coding region, Type A, canine and cat, any region, HA protein, any H subtype, any N subtype and full length only. While this analysis can be carried out in MEGA own browser it may be more easy to do it from your own browser and then later import the results to MEGA
-a.	How many sequences do you get ? Choose 10 of these from different species and from different subtypes and download them both as protein coding and protein in Fasta format as flucoding.fas and fluprotein.fas. We will use these for the alignment exercise and for phylogenetic exercises in the coming weeks
+a.	How many sequences do you get ? Choose 10 of these from different species and from different subtypes and download them both as protein coding and protein in Fasta format as flucoding.fas and fluprotein.fas. We will use these for the alignment exercise and for phylogenetic exercises in the coming weeks.
 
 
 ## 5. BLAST 
@@ -59,11 +59,11 @@ You have downloaded  flu data sets and you should now align these within MEGA’
 First open your flucoding.fas.
 
   1.	Align this at the DNA level using Clustal. Look carefully at all the parameters and try to change them and see how that affects the alignment. Tip: Before you realign you should first remove all gaps. Try to judge the quality of your alignment by looking at it both at the DNA level and at the protein level. 
-    a.	Try to see how you can manually edit your alignment afterwards. Export your best alignment in Megaformat as flucoding.meg for later use
+    a.	Try to see how you can manually edit your alignment afterwards. Export your best alignment in Megaformat as flucoding.meg for later use.
 
   2.	Now remove gaps and choose to translate to amino acids before aligning. Aligning is now at the protein level so Clustal will show different options. Try different combinations and evaluate the alignment as before. Does it seem to be an advantage to align at the protein level and then translate back to nucleotide sequences? Export your best alignment in mega format
   3.	Repeat some of the previous questions using the Muscle alignment tool.
-  4.	Perform alignment also of your FoxP2 data set and export in Mega format
+  4.	Perform alignment also of your FoxP2 data set and export in Mega format.
   5.	Now open your fluprotein.fas dataset, align it and export it as fluprotein.meg
 
 ## 7. Estimating distances
@@ -74,9 +74,9 @@ https://www.megasoftware.net/web_help_10/index.htm#t=Preface.htm
 
 First open flucoding.meg in MEGA. We now want to estimate pairwise distances between all 10 sequences. Choose this option and you will see that there are a lot of choices you can make. Make sure you understand all of these, e.g
 
-  1.	what is complete versus pairwise deletion?
-  2.	what is the variance estimation method?
-  3.	what does it mean that transitions and transversions can be used?
+  1.	What is complete versus pairwise deletion?
+  2.	What is the variance estimation method?
+  3.	What does it mean that transitions and transversions can be used?
 
 You can now try to make distance matrices using p distances, Jukes Canter, Kimura 2 parameter and Tamura Nei models, more detailed information on these are found in the Book Chapters 2 and 3 of Nei and Kumar. Make sure you know what each of these models are doing, e.g.
 
@@ -89,7 +89,7 @@ Now try on the same data to estimate the transition/transversion bias as well as
       a. How do you interpret the value of R, the ratio of transitions to transversions?
   2.	Does the gamma rate parameter suggest large variation in underlying substitution rate?
 Now open fluprotein.meg instead and estimate distances at the protein level.
-  1.	What differences do you see between p distance and Poisson corrected distance?
+  1.	What differences do you see between **p distance** and **Poisson** corrected distance?
       a. What are the distances at the protein level compared to the distances at the nucleotide level?
 
 
