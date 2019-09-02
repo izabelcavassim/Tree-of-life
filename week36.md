@@ -7,7 +7,7 @@ output: html_document
 
 # Week 36 - Tree of life
 
-<img src="image_week36.png" width="70">
+<img src="image_week36.png" width="400">
 
 
 
