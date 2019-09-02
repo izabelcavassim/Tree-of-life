@@ -1,13 +1,13 @@
 ---
 title: "Tree of life - Week 35"
-date: "8/22/2019"
+date: "9/01/2019"
 output: html_document
 ---
 
 
-# Week 35 - Tree of life
+# Week 36 - Tree of life
 
-![Representation of a nucleotide alignment](header-image-copy18.jpg)
+![Representation of a nucleotide alignment](steps_phylogenetics)
 
 
 This week you will have exercises where you should work with testing the best substitution model to use and then you should start building trees using the different classes of tree building methods, the distance based (Neighbourjoining and UPGMA), parsimony and maximum likelihood. You should also bootstrap trees and estimate your confidence in trees using these bootstrap values
@@ -22,20 +22,20 @@ Open primates.meg data set which is the one from Chapter 3 in Nei and Kumar. Wit
 From now on, before you start any analysis you are well advised to determine the best substitution model first
 
 ## The first phylogeny
-First solve Mega tutorial 4
-then
+First solve Mega tutorial 4, that can be found [here](https://www.dropbox.com/s/g47okbhljlov2e5/Mega%20tutorial%204.docx?dl=0) then:
+
 Reopen flucoding.meg and choose to construct phylogeny
 First choose UPGMA with the best substitution model that it allows (UPGMA can not be run with all substitution models).
 1.    What does this method assume?
 2.    What is bootstrap?
-a.    Choose 1000 bootstrap replicates, what does it then mean if a branch is supported by 90%?
+    a.    Choose 1000 bootstrap replicates, what does it then mean if a branch is supported by 90%?
 3.    Which substitution model should you use?
 4.    Should you use uniform rates?
 
 Build the tree and look at it carefully in the tree explorer
 
 1.    What does it show for flu in cats and dogs
-a.    Does the phylogeny follow H subtypes or species?
+    a.    Does the phylogeny follow H subtypes or species?
 2.    Save the tree as a user tree for later use, call it UPGMA
 Now repeat the same exercise with
 
