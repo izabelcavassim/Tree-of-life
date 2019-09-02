@@ -7,7 +7,7 @@ output: html_document
 
 # Week 36 - Tree of life
 
-![Representation of a nucleotide alignment](steps_phylogenetics.png)
+![Representation of a nucleotide alignment](steps_phylogenetics.png =250x)
 
 
 This week you will have exercises where you should work with testing the best substitution model to use and then you should start building trees using the different classes of tree building methods, the distance based (Neighbourjoining and UPGMA), parsimony and maximum likelihood. You should also bootstrap trees and estimate your confidence in trees using these bootstrap values
