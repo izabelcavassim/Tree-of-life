@@ -7,8 +7,7 @@ output: html_document
 
 # Week 36 - Tree of life
 
-![Representation of a nucleotide alignment](image_week36.png)
-<img src="image2_week36.png" width="48">
+<img src="image_week36.png" width="70">
 
 
 
