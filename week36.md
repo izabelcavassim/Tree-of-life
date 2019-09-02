@@ -22,6 +22,9 @@ Open primates.meg data set which is the one from Chapter 3 in Nei and Kumar. Wit
 From now on, before you start any analysis you are well advised to determine the best substitution model first
 
 ## The first phylogeny
+![Tree building algorithms](image2_week36.png | height = 100px)
+
+
 First solve Mega tutorial 4, that can be found [here](https://www.dropbox.com/s/g47okbhljlov2e5/Mega%20tutorial%204.docx?dl=0) then:
 
 Reopen flucoding.meg and choose to construct phylogeny
