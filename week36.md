@@ -7,7 +7,7 @@ output: html_document
 
 # Week 36 - Tree of life
 
-<img src="image_week36.png" width="400">
+<img src="Images/image_week36.png" width="400">
 
 
 
@@ -23,7 +23,7 @@ Open primates.meg data set which is the one from Chapter 3 in Nei and Kumar. Wit
 From now on, before you start any analysis you are well advised to determine the best substitution model first
 
 ## The first phylogeny
-![Tree building algorithms](image2_week36.gif)
+![Tree building algorithms](Images/image2_week36.gif)
 
 
 
