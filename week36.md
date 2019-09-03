@@ -23,7 +23,7 @@ Open primates.meg data set which is the one from Chapter 3 in Nei and Kumar. Wit
 From now on, before you start any analysis you are well advised to determine the best substitution model first
 
 ## The first phylogeny
-![Tree building algorithms](image2_week36.png)
+![Tree building algorithms](image2_week36.gif)
 
 
 
