@@ -9,8 +9,6 @@ output: html_document
 
 <img src="Images/image_week36.png" width="400">
 
-
-
 This week you will have exercises where you should work with testing the best substitution model to use and then you should start building trees using the different classes of tree building methods, the distance based (Neighbourjoining and UPGMA), parsimony and maximum likelihood. You should also bootstrap trees and estimate your confidence in trees using these bootstrap values
 Throughout these exercises I recommend that you keep an open word file where you paste all your results to keep a log book of the exercises, including the different trees that you obtain.
 
@@ -19,7 +17,9 @@ Open primates.meg data set which is the one from Chapter 3 in Nei and Kumar. Wit
 1.    Which model is best for this data? Save the Table of model scores since when running some of the tree building methods, you may not be able to use the best model.
 2.    What does G and I mean?
 3.    What is R? and what is in the 4 columns following the R column?
-4.    List the main differences between  JC, Kimura, HKY, and Tamura/Nei models, based on Table 3.2 a,b,e and f in the book. Relate what you find to question 3 above.
+4.    List the main differences between  JC, Kimura, HKY, and Tamura/Nei models, based on Table 3.2 a,b,e below. Relate what you find to question 3 above.
+![Substitution models](Images/substitution_models.png)
+
 From now on, before you start any analysis you are well advised to determine the best substitution model first
 
 ## The first phylogeny
