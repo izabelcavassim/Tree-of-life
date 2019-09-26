@@ -37,22 +37,8 @@ Just to test you knowledge I first ask you too questions:
 
 1. What are the assumptions of Wright-Fisher model? What is the distributions used for modelling allele frequencies?
 
-```{r, echo = F}
-#The discrete-time wright-fisher model follows a binomial distribution (success and failures).
-#Assumptions: constant pop size, randomly mating, no selection, no migration, non-overlaping generations.
-
-#Frequencies of alleles are changed due to genetic drift, and its intensity will depend on the effective population size. Under a very small population the fluctuations of allele frequencies will be much more drastic.
-#Assuming no mutation all alleles will reach fixation or get extinct. 
-
-#page 
-```
 
 2. In a sample of two gene copies taken from a population, what is the distribution and expectation of the time until the two copies find a most recent common ancestor?
-
-```{r, echo = F}
-#geometric distribution, probability = 1/2n, expected coalescence time is 2 for a population of size 2N, page 242 of the small book
-
-```
 
 ## Exercises using the Wright-Fisher model
 (based on scripts by Graham Coop and Fernando Racimo)
@@ -79,16 +65,6 @@ WF_twoalleles(5,15)
 3. What do you observe plotted on the screen?
 
 
-```{r, echo = F}
-# changes from allele blue to allele red occurs from one generation to another, from left to right
-#4 times red got fixed.
-#3 times blue got fixed.
-#3 times both co-existed.
-#On average it will continue to be 0.5.
-
-
-```
-
 a) Run this line 10 times, and record how many times the red allele fixes, how many times the blue allele fixes and how many times the population remains polymorphic (both the blue and the red allele still co-exist). Compare your results with your neighbor. Does there seem to be a preference for whether the blue or red allele fixes? Why do you think this is so? Hint: check the frequency of the two alleles at the beginning of the simulation.
 
 You may have noticed that a vector of values also gets printed into the console every time we run this simulation. This is the allele counts of the blue allele. We can use this vector to trace the frequency of the blue allele over time:
@@ -101,22 +77,6 @@ plot(bluefreq,ylim=c(0,1),type="b",col="blue",pch=19,xlab="generations",ylab="Bl
 
 b) Repeat exercise a) but with N=3 and N=10. Do alleles tend to "fix" faster when N is large or when N is small?
 
-```{r, echo=FALSE}
-par(mfrow=c(2,2))
-bluecounts <- WF_twoalleles(3,15)
-bluefreq <- bluecounts / (2 * 3)
-plot(bluefreq,ylim=c(0,1),type="b",col="blue",pch=19,xlab="generations",ylab="Blue frequency (3)")
-
-bluecounts <- WF_twoalleles(10,15)
-bluefreq <- bluecounts / (2 * 10)
-plot(bluefreq,ylim=c(0,1),type="b",col="blue",pch=19,xlab="generations",ylab="Blue frequency (10)")
-
-dev.off()
-
-#Alleles fix faster when N is smaller, due to the fact that random genetic drift has a stronger influence in the fluctuations. 
-```
-
-
 ## 2 - Thinking forwards in time: many alleles
 
 We can also run a Wright-Fisher model with more than two alleles. The function below begins with a population in which each individual contains two distinct alleles, which are different from all other alleles in the population.
@@ -128,23 +88,15 @@ WF_manyalleles(5,15)
 a) What happens to the allelic diversity (number of alleles present) as time goes forward? Are there more or less heterozygotes at the end of the simulation than at the beginning?
 
 
-```{r, echo =F}
-#The allelic diversity decrease over generations, there is less heterozygostes than in the beginning. 
-```
-
 b) Check what happens to allelic diversity over time, when N = 3 and when N = 10.
 
-
-```{r, echo =F}
-#The allelic diversity decrease slower in a bigger population.
-```
-
-```{r, echo =F}
+```{r}
 par(mfrow=c(2,1))
 bluecounts <- WF_manyalleles(3,15)
 
 bluecounts <- WF_manyalleles(10,15)
 dev.off()
+
 ```
 
 
@@ -163,19 +115,8 @@ track_lineages(N.vec=rep(10,20), n.iter=1, num.tracked=3)
 
 Repeat this simulation 10 times. For each simulation, record the time between the present and the first coalescent event, and the time between the first coalescent event and the second coalescent event (i.e. the most recent common ancestor of all 3 lineages). You can ignore simulations where lineages have not coalesced at generation 20. Which of the two times tends to be larger? Why do you think this is?
 
-```{r, echo =F}
-#The time that tends to be larger is the time to the most recent common ancestor of all 3 lineages.
-#This is due to the fact that coalescence times follow an exponential distribution, implying that more recent coalescence times are more likely, although the rate at which the coalescence event happens (given that it has not already happened) is constant in time. 
-#Exponential random variables are continuous random variables, and the mean of the exponential random variable is 1/lambda. 
-```
-
 
 b) Check what happens to the coalescence rate, when N = 7 and when N = 20. Do lineages coalesce faster or slower with larger population size?
-
-```{r, echo =F}
-# When the effective population size is smaller the lineages coalesce faster. 
-```
-
 
 ## Exercise	A:	Simulating	a	coalescence	tree	assuming	a	constant	population	size
 
@@ -281,9 +222,6 @@ Based	on the results you get answer the following questions:
 1) Which	coalescence event takes	the	longest on	average (the	first coalescence event,	the	
 second,	third, or the last)? And	which	event	takes	the	shortest on	average?
 
-```{r, echo = F}
-#The last coalescence event take the longest on average to happen.
-```
 
 2) Is	that	what	you	would	expect? Recall that the	mean	of	an	exponential	distribution	with rate	lambda	is	1/lambda and	the	coalescence rate	when	there	are	n nodes	left	is	n(n-1)/2.	So	the	mean is 2/(n(n-1)),	so for	instance	for	when	there	are	5	nodes	left	the	mean	coalescent	time is	2/(5(5-1))=0.1
 
