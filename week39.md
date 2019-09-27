@@ -198,7 +198,8 @@ source("/Users/PM/Dropbox/PHD/POPGEN_SUMMERCOURSE/simulatecoalescencetrees.R")
 
 Once	you	have	done	this	you can	simulate	and	draw	trees just like	you	just	did	by hand by	typing the code below, which will print out ten trees on the screen:
 
-```{r, eval =F}
+```{r}
+
 par(mfrow=c(2,5))
 for(i in c(1:10)){
          print("New Tree")

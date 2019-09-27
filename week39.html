@@ -450,8 +450,15 @@ step 3.</li>
 <p>Doing this by hand is obviously a bit tedious. So based on the R code snippets you already got, we have built a function that allows you to do this automatically (it even makes a drawing of the tree). You can use it from the course server by typing the following in R:</p>
 <pre class="{r}"><code>source(&quot;/Users/PM/Dropbox/PHD/POPGEN_SUMMERCOURSE/simulatecoalescencetrees.R&quot;)</code></pre>
 <p>Once you have done this you can simulate and draw trees just like you just did by hand by typing the code below, which will print out ten trees on the screen:</p>
-<p>```{r, eval =F} par(mfrow=c(2,5)) for(i in c(1:10)){ print(“New Tree”) yourtree &lt;-simtree(5) # simulate tree with 5 nodes ct&lt;-read.tree(text=yourtree);plot(ct,cex=1.5);add.scale.bar(y=1.2,x=0.2,cex = 2,col = “red”,lcol=“red”,lwd=3) print(&quot; &quot;) }</p>
-<p>```</p>
+<pre class="{r}"><code>
+par(mfrow=c(2,5))
+for(i in c(1:10)){
+         print(&quot;New Tree&quot;)
+         yourtree &lt;-simtree(5) # simulate tree with 5 nodes
+         ct&lt;-read.tree(text=yourtree);plot(ct,cex=1.5);add.scale.bar(y=1.2,x=0.2,cex = 2,col = &quot;red&quot;,lcol=&quot;red&quot;,lwd=3)
+         print(&quot; &quot;)
+}
+</code></pre>
 <p>You should see several trees printed out in the screen. If this doesn’t happen, try downloading the R script from this github website, and then running it locally in your machine (after you cd to the folder in which you downloaded the script).</p>
 <p><code>{r, eval = F} library(&quot;ape&quot;)</code></p>
 <p>Note that the code also prints the simulated coalescence times.</p>
